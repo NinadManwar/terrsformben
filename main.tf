@@ -1,9 +1,9 @@
 resource "aws_instance" "public-subnet-instance" {
-    ami = "ami-053b0d53c279acc90"
-    instance_type = "t2.micro"
-    associate_public_ip_address = true
-    key_name = "terra"
+    ami = "${var.amiid}"
+    instance_type = "${var.instance_type}"
+    associate_public_ip_address = "${var.associate_public_ip_address}"
+    key_name = "${var.key}"
     tags = {
-        Name = "terraform_server"
+        Name = "${var.Nametag}"
   }
 }
