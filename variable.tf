@@ -21,11 +21,3 @@ variable "key" {
 variable "amiid" {
     default = "ami-053b0d53c279acc90"
 }
-
-variable "dytable" {
-    default = "tableben"
-}
-
-variable "bucket" {
-    default = "bucketben"
-}
